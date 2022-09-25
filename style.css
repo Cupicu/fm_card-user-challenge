@@ -1,0 +1,122 @@
+/*# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+@import url(resets.css);
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+:root{
+    --cyan: hsl(185, 75%, 39%);
+    --dark: hsl(229, 23%, 23%);
+    --grayish: hsl(227, 10%, 46%);
+}
+
+body{
+    background-color:aqua ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--cyan);
+}
+
+.bg__top{
+    position: absolute;
+    top: -12rem;
+    left: -12rem;
+    z-index: -10;
+}
+
+.bg__bottom{
+    position: absolute;
+    bottom: -12rem;
+    right: -12rem;
+    z-index: -10;
+}
+
+main{
+    background-color: white;
+    border-radius: 15px;
+    height: 375px;
+    width: 320px;
+    overflow: hidden;
+}
+
+.card__user-profile{
+    display:inline-block;
+    border-radius: 4rem;
+    background-color: white;
+    margin-top: -3rem;
+    margin-left: 110px;
+    padding: 0.3rem;
+    height: 100px;
+    width: 100px;
+}
+
+.card__user-info {
+    text-align: center;
+    color: var(--grayish);
+    margin: 1.28rem 1rem;
+}
+.card__user-info h1{
+    color: var(--dark);
+    display: inline-block;
+    font-size: 18px;
+    margin: 0.3rem;
+}
+.card__user-info p{
+    text-align: center;
+}
+main hr{
+    border: none;
+    height: 1px;
+    background-color: var(--grayish);
+    opacity: .15;
+}
+.card__user-social-counter{
+    text-align: center;
+    font-size: 18px;
+}
+.card__user-social-counter div{
+    display: inline-block;
+    margin: 0.4rem 1rem;
+}
+
+.card__user-social-counter h2 {
+    color: var(--dark);
+    font-size: 1.18rem;
+}
+
+.card__user-social-counter P {
+    color: var(--grayish);
+    font-size: .7rem;
+    letter-spacing: 0.1rem;
+}
